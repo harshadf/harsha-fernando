@@ -172,3 +172,16 @@ sections.forEach((section) => {
 
 window.addEventListener('load', observeSections);
 
+document.addEventListener('click', function(event) {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const isClickInsideNavbar = navbarToggler.contains(event.target) || navbarCollapse.contains(event.target);
+
+  if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+      });
+      bsCollapse.hide();
+  }
+});
+
