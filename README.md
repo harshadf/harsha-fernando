@@ -1,6 +1,6 @@
 # Harsha Fernando - Portfolio
 
-This repository contains the source code for Harsha Fernando's personal portfolio website. The website showcases Harsha's professional journey, skills, and projects. It is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages.
+This repository contains the source code for my personal portfolio website. The website showcases my professional journey, skills, and projects. It is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages.
 
 ## Table of Contents
 
