@@ -58,3 +58,4 @@ The CSS styles define the layout, animations, and visual effects for the portfol
 ## Future Improvements
 
 Need to improve active link highlighting and nav link scroll because there are still some inconsistencies.
+Add Future Projects as Coming Soon
