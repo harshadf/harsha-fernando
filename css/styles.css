@@ -425,6 +425,11 @@ section.active {
     height: 100px;
 }
 
+.skills-img {
+    width: 50vw;
+    height: 50vh;
+}
+
 @keyframes flip {
     0% {
         transform: rotateY(0deg);
@@ -508,6 +513,10 @@ section.active {
     .timeline-content-modern {
         margin-left: 20px;
         min-height: 50px;
+    }
+    .skills-img {
+        width: 100vw;
+        height: 50vh;
     }
 }
 
