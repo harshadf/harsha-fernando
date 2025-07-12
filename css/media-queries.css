@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+    .cutom-spacing-title{
+        margin-top: 10px;
+    }
+    .main-details {
+        display: flex;
+        justify-content: center;
+    }
+    .smooch-font{
+        font-family: Smooch;
+        font-size: 30px;
+    }
+    .typing-container {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        height: 60px;
+    }
+    .profile-pic {
+        display: block;
+        width: 200px;
+        height: 400px;
+        filter: drop-shadow(0 0 0.3rem #e8e9eb);
+        transition: all 0.4s ease;
+        position: relative;
+    }
+    .profile-details {
+        display: flex;
+        justify-content: center;
+    }
+
+    .timeline-track {
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: flex-start;
+    }
+
+    .timeline-track::before {
+        top: 0;
+        left: 20px;
+        bottom: 0;
+        width: 2px;
+        height: auto;
+        transform: none;
+        background: #e0e0e0;
+    }
+
+    .timeline-item-modern {
+        width: 100%;
+        margin-bottom: 40px;
+        padding-left: 60px;
+        position: relative;
+    }
+
+    .timeline-marker-modern {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    .timeline-content-modern::before {
+        left: -10px;
+        top: 20px;
+        transform: rotate(45deg);
+    }
+
+    .timeline-content-modern {
+        margin-left: 20px;
+        min-height: 50px;
+    }
+    .skills-img {
+        width: 100vw;
+        height: 50vh;
+    }
+}
