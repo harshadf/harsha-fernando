@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsha Fernando - Portfolio</title>
+    <link rel="icon" href="assets/profile.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Harsha Fernando</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" >
     <link rel="stylesheet" href="./css/styles.css">    
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
@@ -21,7 +22,7 @@
                     <a class="nav-link" href="#experience"><img class="custom-icon mx-2" src="./assets/briefcase.svg" alt="experience" loading="lazy"/></i>Experience</a>
                     <a class="nav-link" href="#education"><img class="custom-icon mx-2" src="./assets/grad.svg" alt="education" loading="lazy"/></i>Education</a>
                     <a class="nav-link" href="#projects"><img class="custom-icon mx-2" src="./assets/folder.svg" alt="project" loading="lazy"/>Projects</a>
-                    <a class="nav-link" href="#skills"><img class="custom-icon mx-2" src="./assets/code.svg" alt="skills" loading="lazy"/>Skills</a>
+                    <a class="nav-link" href="#skills"><img class="custom-icon mx-2" src="./assets/tech-stack.png" alt="skills" loading="lazy"/>Skills</a>
                 </div>
             </div>
         </div>
@@ -178,12 +179,12 @@
                     <div class="col-md-4 text-center mb-4 education-card">
                         <img class="azure-logo" src="./assets/Certificates.svg" alt="AZ 204" loading="lazy"/>
                         <h3>Microsoft Certified</h3>
-                        <p>Azure Developer Associate - AZ 204</p>
+                        <p>Microsoft Certified: Azure Developer Associate</p>
                     </div>
                     <div class="col-md-4 text-center mb-4 education-card">
                         <img class="azure-logo" src="./assets/robot.svg" alt="AI 900" loading="lazy"/>
                         <h3>Microsoft Certified</h3>
-                        <p>Azure AI Fundamentals - AI 900</p>
+                        <p>Microsoft Certified: Azure AI Engineer Associate</p>
                     </div>
                 </div>
             </div>
@@ -195,23 +196,53 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card project-card h-100">
-                            <img src="./assets/Research.jpg" class="card-img-top" alt="..." loading="lazy"/>
+                            <img src="./assets/agent.png" class="card-img-top" alt="..." loading="lazy"/>
                             <div class="card-body">
-                                <h5 class="card-title">Traffic Sign Recognition using Deep learning</h5>
-                                <p class="card-text">Proposed and built a novel deep learning architecture to classify traffic signs with greater accuracy.</p>
+                                <h5 class="card-title">CV analysing AI Agent</h5>
+                                <p class="card-text">Developed an AI agent that analyzes CVs and provides feedback to candidates, enhancing their chances of success in job applications. This can also be important for the employers to filter out the best candidates.
+                                <a href="https://github.com/harshadf/Hack-Submission" target="_blank">Project Demo</a>
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <img src="./assets/Research.jpg" class="card-img-top" alt="..." loading="lazy"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Traffic Sign Recognition using Deep learning</h5>
+                                <p class="card-text">Proposed and built a novel deep learning architecture to classify traffic signs with greater accuracy.
+                                    <a href="https://github.com/harshadf/Traffic-Sign-Recognition-Using-Deep-Neural-Network-and-Skipped-Layer-Architecture" target="_blank">Github Repo</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <img src="./assets/client-project.jpeg" class="card-img-top" alt="..." loading="lazy"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Bringing Ideas to Life: End-to-End Static Website Development. My first client project.</h5>
+                                <p class="card-text">Brought a business owner's vision to life through a fully customized static website. Designed, developed, and delivered to meet their unique brand identity and operational needs.  
+                                <a href="https://elanapoint.com/" target="_blank">view more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
+            </div>            
         </section> 
+
+        <div class="spacer layer1"></div>
 
         <section id="skills" class="skills-section">
             <div class="container">
+                <h2 class="mb-4 text-center"><img class="custom-section-icon mx-2"  src="./assets/tech-stack.png" alt="education" loading="lazy"/>TECH STACK</h2>
                 <div class="row d-flex justify-content-center">                    
                     <img class="skills-img " src="./assets/skills-img.webp" alt="skills" loading="lazy"/>                    
                 </div>
-            </div>            
+            </div>     
         </section>
 
         <div id="overlay" class="overlay">
@@ -224,7 +255,7 @@
     </main>
 
     <footer class="mt-auto text-white-50 text-center py-4">        
-        <p>© 2025 Harsha Fernando</p>
+        <p class="developer-name" >Copyright © Harsha Fernando</p>
     </footer>         
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
