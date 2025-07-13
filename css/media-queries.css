@@ -74,4 +74,33 @@
         width: 100vw;
         height: 50vh;
     }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-white {
+        background: transparent !important;
+        transition: background 0.3s;
+        box-shadow: none;  
+    }
+    .navbar-white-open {
+        background: #f3f4f6 !important;
+        transition: background 0.3s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);    
+        color: black !important;
+    }
+    .nav-link {
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .nav-link.active {
+        color: #000000 !important;
+    }
+
+    .nav-masthead .nav-link {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+        color: rgb(0, 0, 0);
+    }
 }

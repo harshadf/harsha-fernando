@@ -442,3 +442,28 @@ section.active {
   color: #3d51e6;
   text-align: center;
 }
+
+.navbar-transparent {
+    background: transparent !important;
+    transition: background 0.3s;
+    box-shadow: none;
+}
+
+.navbar-white {
+    background: #f3f4f6 !important;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);  
+}
+
+.navbar-white .navbar-brand,
+.navbar-white .nav-link {
+    color: #212529 !important;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link {
+    color: #fff;
+}
+.navbar-toggler {
+  background-color: #212529;
+}
