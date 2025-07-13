@@ -172,16 +172,50 @@ sections.forEach((section) => {
 
 window.addEventListener('load', observeSections);
 
-document.addEventListener('click', function(event) {
+let isNavbarToggled = false;
+document.addEventListener('click', function(event) {  
   const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('.navbar-collapse');
   const isClickInsideNavbar = navbarToggler.contains(event.target) || navbarCollapse.contains(event.target);
+  const navbar = document.querySelector('.navbar');
 
   if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
       const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
           toggle: false
       });
       bsCollapse.hide();
+      isNavbarToggled = false;
+  }
+
+  if(isNavbarToggled)
+  {
+    navbar.classList.remove('navbar-white');
+    navbar.classList.add('navbar-white-open');
+  }
+  if(!isNavbarToggled)
+  {
+    navbar.classList.remove('navbar-white-open');
+    navbar.classList.add('navbar-white');
   }
 });
 
+
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    isNavbarToggled = !isNavbarToggled;
+});
+
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const aboutSection = document.getElementById('about');
+    const aboutBottom = aboutSection.getBoundingClientRect().bottom + window.scrollY;
+    const scrollPosition = window.scrollY + 56;
+
+    if (scrollPosition > aboutBottom) {
+        navbar.classList.add('navbar-white');
+        navbar.classList.remove('navbar-transparent');
+
+    } else {
+        navbar.classList.add('navbar-transparent');
+        navbar.classList.remove('navbar-white');
+    }
+});
