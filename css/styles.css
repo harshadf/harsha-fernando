@@ -467,3 +467,8 @@ section.active {
 .navbar-toggler {
   background-color: #212529;
 }
+.publication-styles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
