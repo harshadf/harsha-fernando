@@ -617,7 +617,6 @@ nav {
   color: #cfcfcf;
   line-height: 1.6;
   margin-bottom: 2rem;
-  max-width: 500px;
 }
 
 .cta-buttons {
@@ -1159,4 +1158,8 @@ nav {
 
 .main-details p{
     color: white;
+}
+
+.scroll-indicator a{
+    text-decoration: none;
 }
