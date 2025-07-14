@@ -165,7 +165,7 @@
   .social-links {
     justify-content: center;
   }
-  
+
   .floating-icon:nth-child(1) {
     left: 20%;
   }
@@ -214,5 +214,31 @@
   .tech-icon:nth-child(13) {
     top: 80px;
     left: 130px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1px !important;
+    margin-bottom: 1px !important;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    border-top: none;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-section h3,
+  .quick-links,
+  .contact-info {
+    display: none;
   }
 }

@@ -254,7 +254,7 @@ document.querySelectorAll('.tech-icon').forEach(icon => {
     setTimeout(() => {
       ripple.remove();
     }, 600);
-    
+
   });
 });
 
@@ -284,3 +284,19 @@ function createParticle() {
 }
 
 setInterval(createParticle, 2000);
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function () {
+  const backToTop = document.querySelector('.back-to-top');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'flex';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
