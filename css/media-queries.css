@@ -103,7 +103,7 @@
   .nav-masthead .nav-link:focus {
     color: rgb(0, 0, 0);
   }
-  
+
   .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -161,5 +161,58 @@
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  
+  .floating-icon:nth-child(1) {
+    left: 20%;
+  }
+
+  .floating-icon:nth-child(2) {
+    right: 20%;
+  }
+
+  .floating-icon:nth-child(3) {
+    left: 20%;
+  }
+
+  .floating-icon:nth-child(4) {
+    right: 20%;
+  }
+
+  .tech-icon:nth-child(5) {
+    top: 10px;
+  }
+
+  .tech-icon:nth-child(6) {
+    top: 180px;
+    right: 80px;
+  }
+
+  .tech-icon:nth-child(7) {
+    bottom: 180px;
+    right: 10px;
+  }
+
+  .tech-icon:nth-child(8) {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .tech-icon:nth-child(11) {
+    bottom: 280px;
+    left: 80px;
+  }
+
+  .tech-icon:nth-child(12) {
+    top: 120px;
+    left: 20px;
+  }
+
+  .tech-icon:nth-child(13) {
+    top: 80px;
+    left: 130px;
   }
 }

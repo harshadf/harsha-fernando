@@ -607,14 +607,14 @@ nav {
 
 .hero-content .subtitle {
   font-size: clamp(1.2rem, 3vw, 1.8rem);
-  color: #a0a0a0;
+  color: #cfcfcf;
   margin-bottom: 2rem;
   font-weight: 300;
 }
 
 .hero-content .description {
   font-size: 1.1rem;
-  color: #c0c0c0;
+  color: #cfcfcf;
   line-height: 1.6;
   margin-bottom: 2rem;
   max-width: 500px;
@@ -979,19 +979,19 @@ nav {
 
 .tech-icon:nth-child(6) {
   top: 180px;
-  right: 20px;
+  right: 150px;
   animation: float3 8s ease-in-out infinite;
 }
 
 .tech-icon:nth-child(7) {
   bottom: 180px;
-  right: 20px;
+  right: 10px;
   animation: float1 9s ease-in-out infinite;
 }
 
 .tech-icon:nth-child(8) {
   bottom: 80px;
-  right: 80px;
+  right: 90px;
   animation: float2 6s ease-in-out infinite;
 }
 
@@ -1010,7 +1010,7 @@ nav {
 
 .tech-icon:nth-child(11) {
   bottom: 180px;
-  left: 20px;
+  left: 120px;
   animation: float2 9s ease-in-out infinite;
 }
 
@@ -1022,7 +1022,7 @@ nav {
 
 .tech-icon:nth-child(13) {
   top: 80px;
-  left: 80px;
+  left: 130px;
   animation: float1 7s ease-in-out infinite;
 }
 
@@ -1157,45 +1157,6 @@ nav {
   animation-delay: 16s;
 }
 
-.react-icon::before {
-  font-size: 28px;
-}
-
-.js-icon::before {
-  font-size: 18px;
-  color: #f7df1e;
-}
-
-.node-icon::before {
-  font-size: 28px;
-}
-
-.python-icon::before {
-  font-size: 28px;
-}
-
-.html-icon::before {
-  font-size: 20px;
-  color: #e34c26;
-}
-
-.css-icon::before {
-  font-size: 24px;
-  color: #1572b6;
-}
-
-.git-icon::before {
-  font-size: 28px;
-}
-
-.docker-icon::before {
-  font-size: 28px;
-}
-
-.aws-icon::before {
-  font-size: 28px;
-}
-
-.db-icon::before {
-  font-size: 28px;
+.main-details p{
+    color: white;
 }
