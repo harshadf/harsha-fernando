@@ -344,13 +344,11 @@ updateProgress(30, 3);
 document.addEventListener('DOMContentLoaded', () => {
   contentLoaded = true;
   updateProgress(60, 4);
-  console.log('DOM content loaded');
 });
 
 window.addEventListener('load', () => {
   resourcesLoaded = true;
   updateProgress(90, 2);
-  console.log('All resources loaded');
 
   setTimeout(() => {
     updateProgress(100, 1);
@@ -359,7 +357,6 @@ window.addEventListener('load', () => {
 
 setTimeout(() => {
   minTimeElapsed = true;
-  console.log('Minimum time elapsed');
   checkIfReady();
 }, 2500);
 
