@@ -241,4 +241,22 @@
   .contact-info {
     display: none;
   }
+
+  .section-experience {
+    margin: 3rem 1rem !important;
+    border-radius: 10px;
+  }
+  .content-area {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  .left-column,
+  .right-column {
+    padding: 0;
+    margin-top: 0;
+  }
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
 }
