@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="assets/profile.png" type="image/png">
+    <link rel="icon" href="assets/profile-img.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsha Fernando</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -14,7 +14,16 @@
     <link rel="preload" href="/assets/profile-img.png" as="image">  
 </head>
 
-<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+<body class="d-flex flex-column min-vh-100 text-white">
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo"></div>
+        <div class="loading-text">Harsha Fernando is Loading 😀</div>
+        <div class="loading-progress">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-percentage" id="loadingPercentage">0%</div>
+    </div>
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="custom-icon mx-2" src="./assets/code.svg" alt="my profile"
@@ -39,9 +48,9 @@
         </div>
     </nav>
 
-    <main class="flex-shrink-0 bg-light text-dark">
+    <main class="flex-shrink-0 text-dark section-transparent" id="mainContent">
 
-        <section class="hero">
+        <section class="hero" id="about">
             <div class="hero-bg"></div>
             <div class="hero-container">
                 <div class="hero-content">
@@ -147,10 +156,10 @@
         </section>
 
 
-        <section id="experience" class="section bg-light">
-            <div class="container">
-                <h2 class="text-center fw-bold"><img class="custom-section-icon" src="./assets/briefcase.svg"
-                        alt="briefcase" loading="lazy" />Professional Journey</h2>
+        <section id="experience" class="section-experience">
+            <div class="container section-title-exp">
+                <h2 class="text-center fw-bold"><img class="custom-section-icon  briefcase-icon"  src="./assets/briefcase.svg"
+                        alt="briefcase" loading="lazy" />Professional Journey </h2>
 
                 <div class="timeline-modern">
                     <div class="timeline-track">
@@ -264,23 +273,27 @@
             </div>
         </section>
 
-        <section id="education" class="section bg-white">
-            <div class="container">
-                <h2 class="mb-4 text-center"><img class="custom-section-icon mx-2" src="./assets/grad.svg"
+        <section id="education" class="section">
+            <div class="dots dots-top-left"></div>
+            <div class="dots dots-bottom-right"></div>
+            <div class="decorative-element"></div>
+            
+            <div class="container section-title-edu">
+                <h2 class="mb-4 text-center"><img class="custom-section-icon mx-2 education-icon" src="./assets/grad.svg"
                         alt="education" loading="lazy" />Education & Certifications</h2>
                 <div class="row">
                     <div class="col-md-4 text-center mb-4 education-card">
-                        <img class="azure-logo" src="./assets/degree-hat.svg" alt="Degree" loading="lazy" />
+                        <img class="azure-logo education-card-icon" src="./assets/degree-hat.svg" alt="Degree" loading="lazy" />
                         <h3>BSc in Computer Science</h3>
                         <p>Eastern University</p>
                     </div>
                     <div class="col-md-4 text-center mb-4 education-card">
-                        <img class="azure-logo" src="./assets/Certificates.svg" alt="AZ 204" loading="lazy" />
+                        <img class="azure-logo education-card-icon" src="./assets/Certificates.svg" alt="AZ 204" loading="lazy" />
                         <h3>Microsoft Certified</h3>
                         <p>Microsoft Certified: Azure Developer Associate</p>
                     </div>
                     <div class="col-md-4 text-center mb-4 education-card">
-                        <img class="azure-logo" src="./assets/robot.svg" alt="AI 900" loading="lazy" />
+                        <img class="azure-logo education-card-icon" src="./assets/robot.svg" alt="AI 900" loading="lazy" />
                         <h3>Microsoft Certified</h3>
                         <p>Microsoft Certified: Azure AI Engineer Associate</p>
                     </div>
@@ -315,10 +328,10 @@
             </div>
         </section>
 
-        <section id="projects" class="section bg-light">
-            <div class="container">
-                <h2 class="mb-4"><img class="custom-section-icon" src="./assets/folder.svg" alt="folder"
-                        loading="lazy" />Featured Projects</h2>
+        <section id="projects" class="section">
+            <div class="container section-title-projects">
+                <h2 class="mb-4"><img class="custom-section-icon mx-2" src="./assets/folder.svg" alt="folder"
+                        loading="lazy" />PROJECTS</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card project-card h-100">

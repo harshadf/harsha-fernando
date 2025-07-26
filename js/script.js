@@ -162,6 +162,7 @@ function observeSections() {
     },
     {
       threshold: 0.1,
+      rootMargin: '80px 0px 0px 0px'
     }
   );
 
@@ -233,7 +234,6 @@ document.querySelectorAll('.tech-icon').forEach(icon => {
 
 document.querySelectorAll('.tech-icon').forEach(icon => {
   icon.addEventListener('click', function () {
-    const techName = this.getAttribute('data-tech');
 
     const ripple = document.createElement('div');
     ripple.style.position = 'absolute';
@@ -300,3 +300,79 @@ window.addEventListener('scroll', function () {
     backToTop.style.display = 'none';
   }
 });
+
+
+let loadingPercentage = 0;
+let contentLoaded = false;
+let resourcesLoaded = false;
+let minTimeElapsed = false;
+
+const loadingScreen = document.getElementById('loadingScreen');
+const mainContent = document.getElementById('mainContent');
+const percentageDisplay = document.getElementById('loadingPercentage');
+const loadingBar = document.getElementById('loadingBar');
+
+const updateProgress = (target, speed = 5) => {
+  const progressInterval = setInterval(() => {
+    if (loadingPercentage < target) {
+      loadingPercentage += Math.random() * speed + 1;
+      loadingPercentage = Math.min(loadingPercentage, target);
+      percentageDisplay.textContent = Math.floor(loadingPercentage) + '%';
+      loadingBar.style.width = Math.floor(loadingPercentage) + '%';
+    } else {
+      clearInterval(progressInterval);
+      checkIfReady();
+    }
+  }, 100);
+};
+
+const checkIfReady = () => {
+  if (contentLoaded && resourcesLoaded && minTimeElapsed && loadingPercentage >= 100) {
+    hideLoadingScreen();
+  }
+};
+
+const hideLoadingScreen = () => {
+  setTimeout(() => {
+    loadingScreen.classList.add('hidden');
+    mainContent.classList.add('show');
+    startTechIconAnimations();
+  }, 300);
+};
+
+updateProgress(30, 3);
+
+document.addEventListener('DOMContentLoaded', () => {
+  contentLoaded = true;
+  updateProgress(60, 4);
+  console.log('DOM content loaded');
+});
+
+window.addEventListener('load', () => {
+  resourcesLoaded = true;
+  updateProgress(90, 2);
+  console.log('All resources loaded');
+
+  setTimeout(() => {
+    updateProgress(100, 1);
+  }, 200);
+})
+
+setTimeout(() => {
+  minTimeElapsed = true;
+  console.log('Minimum time elapsed');
+  checkIfReady();
+}, 2500);
+
+setTimeout(() => {
+  if (!loadingScreen.classList.contains('hidden')) {
+    console.log('Fallback: Force hiding loading screen');
+    loadingPercentage = 100;
+    percentageDisplay.textContent = '100%';
+    loadingBar.style.width = '100%';
+    contentLoaded = true;
+    resourcesLoaded = true;
+    minTimeElapsed = true;
+    hideLoadingScreen();
+  }
+}, 6000);

@@ -241,4 +241,9 @@
   .contact-info {
     display: none;
   }
+
+  .section-experience{
+    margin: 3rem 1rem !important;  
+    border-radius: 10px;
+  }
 }
