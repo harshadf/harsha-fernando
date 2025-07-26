@@ -336,7 +336,6 @@ const hideLoadingScreen = () => {
   setTimeout(() => {
     loadingScreen.classList.add('hidden');
     mainContent.classList.add('show');
-    startTechIconAnimations();
   }, 300);
 };
 
