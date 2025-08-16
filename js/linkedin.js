@@ -87,12 +87,7 @@
       badge.setAttribute('data-uid' , uid);
       jsonp(url);
     }
-
-    /**
-    * Handles a response from the server. Finds badge matching badgeUid and inserts badgeHtml there
-    * @param badgeHtml: String representing contents of the badge
-    * @param badgeUid: UID of the badge to target
-    **/
+    
     function responseHandler(badgeHtml, badgeUid) {
       responsesReceived ++;
 
