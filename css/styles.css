@@ -675,11 +675,12 @@ nav {
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   background: #1a1a1a;
   position: relative;
   z-index: 1;
+  transform: scale(1.2, 1.2);
 }
 
 .floating-elements {
@@ -767,9 +768,6 @@ nav {
   animation: bounce 2s infinite;
 }
 
-/*Tech Stack CSS*/
-
-/* Animated background */
 .tech-bg {
   position: fixed;
   top: 0;
@@ -1759,4 +1757,22 @@ section h2 {
 
 .research-link:hover {
   color: #4ecdc4;
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+.coming-soon-social-links{
+  pointer-events: none;
 }
